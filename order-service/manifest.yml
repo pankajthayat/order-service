@@ -1,0 +1,9 @@
+memory: 1GB
+instances: 1
+applications:
+- name: order-service
+  path:  target\order-service-0.0.1-SNAPSHOT.jar
+  routes:
+    - route: order-service-pankaj.cfapps.io
+  services:
+  - order-db
